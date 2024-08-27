@@ -9,40 +9,38 @@ function Home() {
       <Stack
         as={Box}
         textAlign={"center"}
-        spacing={{ base: 8, md: 14 }}
+        
         py={{ base: 20, md: 36 }}
       >
         <Heading
           fontWeight={600}
-          fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
-          lineHeight={"110%"}
+          fontSize={{ base: "2xl", sm: "4xl", md: "8xl" }}
+          marginBottom={0}
         >
           {/* Listen<br/> & <br/> */}
-          <Text color={"pink.500"}>
-            A <br />
-          </Text>
-          <Text as={"span"} color={"black.500"}>
-            BHAYA.
+          <Text color={"#DC0083"}>
+            EmpowerHer
           </Text>
         </Heading>
-        <Text fontFamily={"Inter"} fontSize={"larger"} color={"gray.600"}>
-          here at your service!
+        <Text fontFamily={"Inter"} fontSize={"large"} color={"#DC0083"}>
+          Revolutionizing Women's Safety with Cutting-Edge Tech
         </Text>
         <Stack
           direction={"column"}
-          spacing={5}
           align={"center"}
           alignSelf={"center"}
-          position={"relative"}
+          mt="200px"
         >
           <Link to="/login">
             <Button
+              textColor={"black"}
               colorScheme={"pink"}
               bg={"pink.600"}
               rounded={"full"}
               px={6}
               _hover={{
-                bg: "pink.400",
+                bg: "#1d122a",
+                textColor: "pink.600",
               }}
               // onClick={() => {
               //   window.open(process.env.REACT_APP_LOGIN, "_self");

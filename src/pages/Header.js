@@ -30,8 +30,8 @@ export default function Header() {
   return (
     <Box>
       <Flex
-        bg={useColorModeValue("white", "gray.800")}
-        color={useColorModeValue("gray.600", "white")}
+        bg={useColorModeValue("#1d122a", "#1d122a")}
+        color={useColorModeValue("#1d122a", "#1d122a")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -54,20 +54,20 @@ export default function Header() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "center" }}>
           <Text
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             // fontFamily={'heading'}
             fontSize="2rem"
-            textTransform={"uppercase"}
             fontWeight={"bold"}
-            color={useColorModeValue("pink.500", "pink.400")}
+            color={useColorModeValue("#DC0083", "#DC0083")}
+            fontFamily="Open Sans"
           >
-            <span color="red.500">A</span>bhaya
+            <span  color="#F5004F">E</span>mpowerHer
           </Text>
 
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
-            <DesktopNav />
+          <Flex display={{ base: "none", md: "flex" }} ml={10} mt={3} justify="center" >
+            <DesktopNav/>
           </Flex>
         </Flex>
 
@@ -90,7 +90,7 @@ export default function Header() {
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("pink.600", "white");
+  const linkHoverColor = useColorModeValue("#DC0083", "#DC0083");
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
@@ -101,6 +101,7 @@ const DesktopNav = () => {
             <PopoverTrigger>
               <Link
                 p={2}
+                fontFamily={"Open Sans"}
                 href={navItem.href ?? "#"}
                 fontSize={"lg"}
                 fontWeight={600}
