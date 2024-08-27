@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
 
-import Route from "./routes/routes";
+import WebRoutes from "./routes/routes";
 import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 function App() {
@@ -33,7 +33,7 @@ function App() {
       </Button>
 
       <Header />
-      <Route />
+      <WebRoutes />
       <Footer />
 
       {/* <AudioTest/> */}

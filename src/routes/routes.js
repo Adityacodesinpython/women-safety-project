@@ -1,22 +1,20 @@
 import React from "react";
-import { Route, Switch, BrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import routeConfig from "./route-config";
 
-function Routes(/* {authStore} */) {
+function WebRoutes(/* {authStore} */) {
   const { routes } = routeConfig;
 
   return (
-    <BrowserRouter>
-      <Switch>
+      <Routes>
         {routes.map((route, i) => {
-          const { component: Component, path, exact } = route;
+          const { component, path } = route;
           return (
-            <Route path={path} component={Component} exact={exact} key={i} />
+            <Route path={path} Component={component} key={i}/>
           );
         })}
-      </Switch>
-    </BrowserRouter>
+      </Routes>
   );
 }
 
-export default Routes;
+export default WebRoutes;

@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import App from './App';
 import { ChakraProvider, extendTheme, ColorModeScript } from "@chakra-ui/react";
 import { BrowserRouter } from "react-router-dom";
 
-const config = {
-  initialColorMode: "light",
-  useSystemColorMode: false,
-};
+// const config = {
+//   initialColorMode: "light",
+//   useSystemColorMode: false,
+// };
 // 3. extend the theme
 const theme = extendTheme({ 
   fonts: {
@@ -18,7 +18,8 @@ const theme = extendTheme({
   }
  });
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
@@ -26,9 +27,9 @@ ReactDOM.render(
         <App />
       </BrowserRouter>
     </ChakraProvider>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
+
 // ReactDOM.render(
   
 //     <App />
