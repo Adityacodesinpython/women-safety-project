@@ -18,11 +18,11 @@ function Home() {
           marginBottom={0}
         >
           {/* Listen<br/> & <br/> */}
-          <Text color={"#DC0083"}>
+          <Text color={"#add8e6"}>
             EmpowerHer
           </Text>
         </Heading>
-        <Text fontFamily={"Inter"} fontSize={"large"} color={"#DC0083"}>
+        <Text fontFamily={"Inter"} fontSize={"large"} color={"#add8e6"}>
           Revolutionizing Women's Safety with Cutting-Edge Tech
         </Text>
         <Stack
@@ -34,8 +34,8 @@ function Home() {
           <Link to="/login">
             <Button
               textColor={"black"}
-              colorScheme={"pink"}
-              bg={"pink.600"}
+              colorScheme={"#add8e6"}
+              bg={"#add8e6"}
               rounded={"full"}
               px={6}
               _hover={{

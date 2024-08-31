@@ -60,10 +60,10 @@ export default function Header() {
             // fontFamily={'heading'}
             fontSize="2rem"
             fontWeight={"bold"}
-            color={useColorModeValue("#DC0083", "#DC0083")}
+            color={useColorModeValue("#add8e6 ", "#add8e6 ")}
             fontFamily="Open Sans"
           >
-            <span  color="#F5004F">E</span>mpowerHer
+            <span  color="#add8e6">E</span>mpowerHer
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10} mt={3} justify="center" >
