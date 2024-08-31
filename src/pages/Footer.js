@@ -22,7 +22,7 @@ const Footer = () => {
           spacing={4}
           justify={{ base: 'center', md: 'center' }}
           align={{ base: 'center', md: 'center' }}>
-          <Text>© 2021  Hack-Up007. All rights reserved</Text>
+          <Text>© 2024  Web Drivers. All rights reserved</Text>
           
         </Container>
       </Box>

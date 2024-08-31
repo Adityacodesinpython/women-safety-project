@@ -14,32 +14,53 @@ import { ImLinkedin } from "react-icons/im";
 import { BsInstagram } from "react-icons/bs";
 const testimonials = [
   {
-    name: "Koushik Sherugar",
+    name: "Vedant Sanap",
     role: "Frontend web developer, Ui designer",
     content:
       "Frontend reactjs webdeveloper with a vision of solving real world problems and learning to improve knowledge by practical application .",
     avatar: Koushik,
-    linkedIn: "https://www.linkedin.com/in/koushik-sherugar-7a45a7211/",
-    Instagram: "https://www.instagram.com/kaushik_sherugar_007/",
+    linkedIn: "https://www.linkedin.com/in/vedantsanap0110/",
   },
   {
     name: "REVA hack",
-    // role: "Full stack web developer",
-    // content:
-    //   "An enthusiastic full stack webdeveloper with an creative mind and ideology and helping his fellow developers in team and taking them forward along with him.",
-    // avatar: KunalKumar,
-    // linkedIn: "https://www.linkedin.com/in/akshit-arora/",
-    // Instagram:"https://www.instagram.com/_arorakshit/",
+    role: "Full stack web developer",
+    content:
+      "An enthusiastic full stack webdeveloper with an creative mind and ideology and helping his fellow developers in team and taking them forward along with him.",
+    avatar: KunalKumar,
+    linkedIn: "https://www.linkedin.com/in/prathamesh-palve-093066284/",
   },
 
   {
-    name: "Kunal Kumar",
+    name: "Aditya Sampath Kumar",
     role: "Full stack web and app developer",
     content:
       "An enthusiastic full stack webdeveloper with an creative mind and ideology and helping his fellow developers in team and taking them forward along with him.",
     avatar: KunalKumar,
-    linkedIn: "https://www.linkedin.com/in/akshit-arora/",
-    Instagram: "https://www.instagram.com/_arorakshit/",
+    linkedIn: "https://www.linkedin.com/in/aditya-sampath-kumar-abab94280/",
+  },
+  {
+    name: "Ria Chaudhary",
+    role: "Frontend web developer, Ui designer",
+    content:
+      "Frontend reactjs webdeveloper with a vision of solving real world problems and learning to improve knowledge by practical application .",
+    avatar: KunalKumar,
+    linkedIn: "https://www.linkedin.com/in/ria-chaudhari-242b921a3/",
+  },
+  {
+    name: "Ronak Kataria",
+    role: "Frontend web developer, Ui designer",
+    content:
+      "Frontend reactjs webdeveloper with a vision of solving real world problems and learning to improve knowledge by practical application .",
+    avatar: KunalKumar,
+    linkedIn: "https://www.linkedin.com/in/ronak-katariya-02877b284/",
+  },
+  {
+    name: "Omkar Gholap",
+    role: "Frontend web developer, Ui designer",
+    content:
+      "Frontend reactjs webdeveloper with a vision of solving real world problems and learning to improve knowledge by practical application .",
+    avatar: KunalKumar,
+    linkedIn: "https://www.linkedin.com/in/ria-chaudhari-242b921a3/",
   },
 ];
 
@@ -51,7 +72,7 @@ const backgrounds = [
 ];
 
 function TestmonialCard(props) {
-  const { name, role, content, avatar, linkedIn, Instagram, index } = props;
+  const { name, role, content, avatar, linkedIn, index } = props;
   return (
     <Flex
       boxShadow={"lg"}
@@ -96,16 +117,16 @@ function TestmonialCard(props) {
         justifyContent={"space-between"}
       >
         <Text
-          fontFamily={"Inter"}
+          fontFamily={"Open Sans"}
           fontWeight={"medium"}
           fontSize={"15px"}
           pb={4}
         >
           {content}
         </Text>
-        <Text fontFamily={"Work Sans"} fontWeight={"bold"} fontSize={14}>
+        <Text fontFamily={"Open Sans"} fontWeight={"bold"} fontSize={14}>
           {name}
-          <Text fontFamily={"Inter"} fontWeight={"medium"} color={"gray.500"}>
+          <Text fontFamily={"Open Sans"} fontWeight={"medium"} color={"gray.500"}>
             {" "}
             - {role}
           </Text>
@@ -128,9 +149,9 @@ function TestmonialCard(props) {
           <a href={linkedIn} target="_blank" rel="noreferrer">
             <ImLinkedin size={30} style={{ color: "blue" }} />
           </a>
-          <a href={Instagram} target="_blank" rel="noreferrer">
+          {/* <a href={Instagram} target="_blank" rel="noreferrer">
             <BsInstagram size={30} style={{ color: "#d6249f" }} />
-          </a>
+          </a> */}
         </Flex>
       </Flex>
     </Flex>
@@ -148,7 +169,7 @@ export default function Aboutus() {
     >
       <Box width={{ base: "full", sm: "lg", lg: "lg" }} margin={"auto"}>
         <Heading
-          fontFamily={"Work Sans"}
+          fontFamily={"Open Sans"}
           fontWeight={"bold"}
           fontSize={20}
           textTransform={"uppercase"}
@@ -159,11 +180,11 @@ export default function Aboutus() {
         <Heading
           py={5}
           fontSize={48}
-          fontFamily={"Work Sans"}
+          fontFamily={"Open Sans"}
           fontWeight={"bold"}
           color={useColorModeValue("pink.600", "gray.50")}
         >
-          Team Hack-Up007
+          Web Drivers
           {/* <TiSocialLinkedinCircular/> */}
         </Heading>
       </Box>
@@ -179,14 +200,7 @@ export default function Aboutus() {
           <TestmonialCard {...cardInfo} index={index} />
         ))}
       </SimpleGrid>
-      <Box>
-        <Icon viewBox="0 0 40 35" mt={14} boxSize={10} color={"pink.400"}>
-          <path
-            fill={"currentColor"}
-            d="M10.7964 5.04553e-07C8.66112 -0.000123335 6.57374 0.632971 4.79827 1.81922C3.0228 3.00547 1.63898 4.69158 0.82182 6.66433C0.00466116 8.63708 -0.209132 10.8079 0.207477 12.9021C0.624087 14.9964 1.65239 16.9201 3.16233 18.4299L19.1153 34.3828C19.2395 34.5074 19.3871 34.6062 19.5496 34.6736C19.7121 34.741 19.8863 34.7757 20.0622 34.7757C20.2381 34.7757 20.4123 34.741 20.5748 34.6736C20.7373 34.6062 20.8848 34.5074 21.0091 34.3828L36.962 18.4272C38.9319 16.3917 40.0228 13.6636 39.9996 10.8311C39.9764 7.99858 38.8409 5.28867 36.838 3.28573C34.835 1.28279 32.1251 0.147283 29.2926 0.124081C26.4601 0.100879 23.732 1.19184 21.6965 3.1617L20.0622 4.79337L18.4305 3.1617C17.4276 2.15892 16.237 1.36356 14.9267 0.821064C13.6163 0.278568 12.2119 -0.000433066 10.7937 5.04553e-07H10.7964Z"
-          />
-        </Icon>
-      </Box>
+      
     </Flex>
   );
 }
