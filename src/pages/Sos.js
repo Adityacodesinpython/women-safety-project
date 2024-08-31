@@ -5,15 +5,13 @@ const Sos = () => {
     <Flex justifyContent="center" h="100vh" alignItems='center' flexDirection='column'>
       <Heading
           as="h1"
-          fontFamily={"Raleway"}
+          fontFamily={"Open Sans"}
           fontWeight={"bold"}
-          fontSize={58}
-          // textTransform={"uppercase"}
+          fontSize={50}
           mb={5}
-          color={"pink.600"}
+          color={"#add8e6"}
         >Are you feeling unsafe?</Heading>
-      <br />
-      <Text mb={4} fontSize="2xl">press the button below 👇</Text>
+      
       <Link href= "/soscomponent">
       <Box
       
@@ -26,10 +24,12 @@ const Sos = () => {
         px="8px"
         borderRadius="150px"
         fontSize="14px"
+        fontFamily={"Open Sans"}
         fontWeight="semibold"
         bg="red"
         borderColor="#ccd0d5"
         color="#4b4f56"
+        m={5}
         _hover={{ bg: "#8B0000" }}
         _active={{
           bg:"#B22222",
@@ -45,6 +45,8 @@ const Sos = () => {
         
       </Box>
       </Link>
+      <br/>
+      <Text mb={4} color={"#add8e6"} fontFamily={"Open Sans"} fontSize="2xl">press this button 👆</Text>
     </Flex>
   );
 };

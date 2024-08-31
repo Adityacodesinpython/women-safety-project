@@ -31,28 +31,27 @@ const Panic = () => {
         h="100vh"
         alignItems="center"
         flexDirection="column"
-        bgGradient="linear(to-l, #f1a7f1, #fad0c4 )"
+        bgGradient=""
+        justifyContent={"center"}
       >
         {/* <Flex  h='100vh' bg="pink.500" flexDirection='column' alignItems='center'> */}
         {/* <audio src={ambulence}></audio>  */}
         {/* <Center  bg="pink.500" h="100vh" > */}
         {/* <Text my={8}  fontSize="4xl">Panic button</Text> */}
         <Heading
-          color="pink.600"
+          color="red"
           as="h1"
           fontSize="6xl"
           textTransform={"uppercase"}
-          mb={3}
+          mb={4}
         >
           Panic button
-        </Heading>
-        <Heading fontSize={"x-large"} mb={8} px={6} color={"pink.500"}>
-          According pshycology it creates panic to the assaulter during attack.
         </Heading>
 
         <Box
           as="button"
           height="300px"
+          m={5}
           width="300px"
           lineHeight="1.2"
           transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
@@ -87,6 +86,9 @@ const Panic = () => {
             </Heading>
           )}
         </Box>
+        <Heading fontSize={"large"} m={8} px={6} color={"#add8e6"}>
+          According pshycology it creates panic to the assaulter during attack.
+        </Heading>
       </Flex>
     </div>
   );

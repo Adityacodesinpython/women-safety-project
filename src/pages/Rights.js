@@ -9,6 +9,7 @@ import {
   Container,
 } from "@chakra-ui/react";
 import Law from "../data/Law.json";
+import { Flex } from "@chakra-ui/react";
 // interface IBlogTags {
 //   tags: Array<string>;
 //   marginTop?: SpaceProps['marginTop'];
@@ -52,18 +53,20 @@ import Law from "../data/Law.json";
 const Rights = () => {
   return (
     <Container maxW={"7xl"} p="10">
-      <Heading
-        color="pink.600"
-        as="h1"
-        fontSize="6xl"
-        textTransform={"uppercase"}
-        mb={3}
-      >
-        Know your rights!!
-      </Heading>
-      <Text color="pink.600" as="h3" fontSize="2xl" mb={3}>
-        rights supporting women safety
-      </Text>
+      <Flex justifyContent={"center"} flexDirection={"column"} alignItems={"center"}>
+        <Heading
+          color="#add8e6"
+          as="h1"
+          fontSize="5xl"
+          textTransform={"uppercase"}
+          mt={5}
+        >
+          Know your rights!!
+        </Heading>
+        <Text color="#add8e6" as="h3" fontFamily={"Open Sans"} fontSize="large" mb={5}>
+          rights regarding women safety
+        </Text>
+      </Flex>
       <Divider marginTop="5" color="pink.400" />
 
       {Law.map((law, index) => {
@@ -92,7 +95,6 @@ const Rights = () => {
                     borderRadius="lg"
                     src={law.image}
                     alt="rights"
-                    objectFit="contain"
                   />
                 </Link>
               </Box>
