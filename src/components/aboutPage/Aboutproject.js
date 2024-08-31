@@ -28,7 +28,7 @@ const About = () => {
       <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
         <Heading
           as="h1"
-          fontFamily={"Work Sans"}
+          fontFamily={"Open Sans"}
           fontWeight={"bold"}
           fontSize={48}
           textTransform={"uppercase"}
@@ -37,7 +37,7 @@ const About = () => {
         >
           About The Project
         </Heading>
-        <Text fontFamily={"poppins"}as="p" fontSize="lg" marginTop="3">
+        <Text fontFamily={"Open Sans"}as="p" fontSize="lg" marginTop="3">
 
         <Heading as="h6" pt={3} pb={1} color="grey">What problem we are trying to solve? </Heading>
            Women think twice before stepping out of their
